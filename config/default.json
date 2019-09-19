@@ -1,0 +1,13 @@
+{
+    "WEBSERVER": {
+        "protocol": "http",
+        "host": "localhost",
+        "port": "3001"
+    },
+    "MONGODB": {
+        "uri": "mongodb://localhost:27017/RealEsateDB"
+    },
+    "JWT": {
+        "secretKey": "REALESTATE@TEST"
+    }
+}

@@ -1,0 +1,39 @@
+1) Add the following modules to your devDependencies using:
+
+npm install --save-dev eslint
+npm install --save-dev eslint-config-airbnb-base
+npm install --save-dev eslint-plugin-import
+
+2) Add an eslintConfig section to your package.json:
+
+"eslintConfig": {
+    "extends": "airbnb-base",
+    "env": {
+        "es6": true,
+        "browser": true
+    },
+    "rules": {
+        "brace-style": [
+            "error",
+            "stroustrup"
+        ],
+        "comma-dangle": [
+            "error",
+            "never"
+        ],
+        "no-unused-vars": [
+            "warn"
+        ],
+        "no-var": [
+            "off"
+        ],
+        "one-var": [
+            "off"
+        ]
+    }
+}
+3) Visit eslint.org/docs/rules, search for the warnings you want to tweak and add them to the eslintConfig above.
+
+4) Delete the .eslintrc file in the root of your project.
+
+5) Restart your IDE
